@@ -1,0 +1,4 @@
+{
+    "databaseConnectionString": "mongodb://localhost:27017/jwt",
+    "jwtKey": "This is secure key"
+}
