@@ -50,29 +50,30 @@ npm run dev
 ```
 
 ## Use [Postman](https://www.postman.com/) to test API
-set 'Post' : 'localhost:1111/auth/create', expect return "message": "User created"
+set 'Post' : 'localhost:1111/auth/create'. Add body, click 'Beautify' and Send. Expect return "message": "User created" or "User creation faile"
 ```
-    body 
-        {
-            "email": "hello@test.com",
-            "password": "test"
-        }
+body raw
+    {
+        "email": "hello@test.com",
+        "password": "test"
+    }
 ```
-set 'Post' : 'localhost:1111/auth/login', expect return   "token": "eyJhbGciOiJIUzI1NiIsInR5c......." OR "error": "Authentication failed" if password not match
+set 'Post' : 'localhost:1111/auth/login'. Add body, click 'Beautify' and Send. Expect return "token": "eyJhbGciOiJIUzI1NiIsInR5c......." OR "error": "Authentication failed" 
 ```
-    body 
-        {
-            "email": "hello@test.com",
-            "password": "test"
-        }
+body raw
+    {
+        "email": "hello@test.com",
+        "password": "test"
+    }
 ```
 
 > **Note**
 > Use [jwt.io](http://jwt.io) to vertify the token validation
 
-set 'GET' : 'localhost:1111/secure/api', except return "message": "Secure route accessed by xxxx" OR  "error": "Invalid jwt token" if token not matched or expired
+set 'GET' : 'localhost:1111/secure/api'. Add Header and Send. Expect return "message": "Secure route accessed by xxxx" OR  "error": "Invalid jwt token" if token not matched or expired
 ```
-        "Authorization": "eyJhbGciOiJIUzI1NiIsIn......"
+Headers
+    "Authorization": "eyJhbGciOiJIUzI1NiIsIn......"
 ```
 
 > **Note**
@@ -82,11 +83,11 @@ set 'GET' : 'localhost:1111/secure/api', except return "message": "Secure route 
 - Acccess http://localhost:1111/
 - Enter email domain and passwsord, then click on 'Create'
 - Access MongoExpress http://localhost:8081 and check database and user document created
-
+\
 - Access http://localhost:1111/ 
 - Enter email domain and passwsord, then click on 'Login'
 - Open Chrome inspect, goto 'Application' and 'Cookies', check the token cookies created
-
+\
 - Access http://localhost:1111/secure/html
 - secure Welcome page displayed
 
