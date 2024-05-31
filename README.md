@@ -7,15 +7,19 @@ When you have API resource that need to protect, decide on the type of authentic
 This repo has the following sample implementation using approach
 
 ## [Using Node.js + Express](./Node.js-Express)
-- Express serve as API server for authentication and issue JWT token
+- Bcakend Express as API server for authentication and issue JWT token
 - Frontend HTML web page with JavaScript AJAX request
 - MongoDB for store user accounts. Password-hashing with Bcrypt
 
-## [Using Express + React.js] (./React-Hookform)
-- Express serve as API server for authentication and issue JWT token
+## [Using Express + React.js](./React-Hookform)
+- Bcakend Express as API server for authentication and issue JWT token
 - Frontend using React (Hoot-form, Redux-toolkit and Redux-Persist)
 - MongoDB for store user accounts. Password-hashing with Bcrypt
 
+## [Using Next.js Framework](./Next.js-Router)
+- Backend NEXT.js implement NEXT Router as API server for authentication and issue JWT token
+- Frontend NEXT.js using React (to be implemented)
+- MongoDB (recplica set) for store user accounts. Password-hashing with Bcrypt
 
-
+## [Using Next.js + Auth.js](./Next.js-Auth.js)
 
