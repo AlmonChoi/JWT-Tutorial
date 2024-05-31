@@ -1,11 +1,4 @@
-# JWT_Node.js
-JWT Authentication in Node.js
-
-When you have API resource that need to protect, decide on the type of authentication to be implemented. Common options include username/password with cookie/session key, or token-based authentication (e.g., JWT).
-
-[JSON Web Token (JWT)](https://jwt.io/introduction) is an open standard ([RFC 7519](https://tools.ietf.org/html/rfc7519)) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object. This information can be verified and trusted because it is digitally signed. JWTs can be signed using a secret (with the HMAC algorithm) or a public/private key pair using RSA or ECDSA.
-
-This is sample Node.JS backend application implmeented both API and HTML page response based on request URL path
+# JWT Authentication implement using Node.js + Express + MongoDB
 
 ## Create the back-end API using Node.JS and Express.JS
 
