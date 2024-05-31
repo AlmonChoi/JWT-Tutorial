@@ -1,4 +1,10 @@
-# JWT Authentication implement using Node.js + Express + MongoDB
+# JWT Authentication implement using Node.js + Express
+
+This is sample Node.JS application 
+- Backend Node.JS 
+- Express implemented API server & issue JWT token
+- Frontend HTML page 
+- MongoDB for store user accounts
 
 ## Create the back-end API using Node.JS and Express.JS
 
