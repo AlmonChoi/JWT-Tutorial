@@ -46,12 +46,11 @@ docker-compose up -d
 
 ### 3. Update environment variables file - '/.env'
 
-- Add database conncetion URL and JWT secure key
+- Add database conncetion URL
 - Generate one here: https://generate-secret.vercel.app/32 (only required for localhost)
 
 ```
 DATABASE_URL="mongodb://host.docker.internal:27017/jwt?replicaSet=rs0&ssl=false"
-JWT_KEY="This is secure key"
 
 AUTH_SECRET="64030d57a5c1cc75c5bc2fad994b7696"
 AUTH_TRUST_HOST=http://localhost:3000
@@ -84,42 +83,42 @@ npm run start
 - Acccess http://localhost:3000/
 
 ### Home Page
-<img src="./README.screen/page-home.jpg" width="700">
+<img src="./README.screen/page-home.jpg" width="800">
 Cookie before sign in
-<img src="./README.screen/cookie-main.jpg" width="600">
+<img src="./README.screen/cookie-main.jpg" width="800">
 Menu bar before sign in
-<img src="./README.screen/navbar-b4-signin.jpg" width="700">
+<img src="./README.screen/navbar-b4-signin.jpg" width="800">
 
 ### Create User Page
-<img src="./README.screen/page-create.jpg" width="700">
+<img src="./README.screen/page-create.jpg" width="800">
 Account creation result 
 <img src="./README.screen/result-created.jpg" width="300">
 Account stored in MongoDB
-<img src="./README.screen/mongo-express.jpg" width="700">
+<img src="./README.screen/mongo-express.jpg" width="800">
 Account creation failed, for example duplicated user, password too long/short, and etc!
 <img src="./README.screen/result-fail.jpg" width="300">
 
 
 ### Sign in User Page
 - After sign in, if no callback url, it will redirected to Home Page
-<img src="./README.screen/page-signin.jpg" width="700">
+<img src="./README.screen/page-signin.jpg" width="800">
 Client side input validation
-<img src="./README.screen/Validation-input.jpg" width="700">
+<img src="./README.screen/Validation-input.jpg" width="600">
 Account sign in failed, for example user not found, password not match, too long/short and etc! 
 <img src="./README.screen/result-sigin-fail.jpg" width="300">
 Cookie after sigin in
-<img src="./README.screen/cookie-token.jpg" width="600">
+<img src="./README.screen/cookie-token.jpg" width="800">
 Menu bar after sign in
-<img src="./README.screen/navbar-after-signin.jpg" width="700">
+<img src="./README.screen/navbar-after-signin.jpg" width="800">
 
 ### Protected and Secure Page
-<img src="./README.screen/page-secured.jpg" width="700">
-<img src="./README.screen/page-protected.jpg" width="700">
+<img src="./README.screen/page-secured.jpg" width="800">
+<img src="./README.screen/page-protected.jpg" width="800">
 
 > **Note**
 > Without sign in, these page will redirect to `Sign In'. It will redirected back after sucessful sign in
 Callback URL added
-<img src="./README.screen/url-callback.jpg" width="500">
+<img src="./README.screen/url-callback.jpg" width="700">
 
 
 ## Learn More
