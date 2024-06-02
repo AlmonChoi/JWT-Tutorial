@@ -7,7 +7,9 @@ Auth.js is a runtime agnostic library based on standard Web APIs that integrates
 - Backend NEXT.js implemented server side authentication using `Auth.js` `5.0.0-beta.4` and issue session token
 - Frontend NEXT.js side + client pages
 - MongoDB (recplica set) for store user accounts
-(Application based on [Next.js Postgres Auth Starter](https://vercel.com/templates/next.js/prisma-postgres-auth-starter) with modified using `Prisma` and `MongoDB`
+
+> **Note**
+> Application based on [Next.js Postgres Auth Starter](https://vercel.com/templates/next.js/prisma-postgres-auth-starter) with modified using `Prisma` and `MongoDB`
 
 ### Library components used
 
@@ -16,7 +18,6 @@ Auth.js is a runtime agnostic library based on standard Web APIs that integrates
 - [Prisma ORM](https://www.prisma.io/docs/orm/overview/introduction/what-is-prisma) for dataase schema, access and operations
 - [Zod](https://zod.dev/?id=introduction) for content validation according to defined schema
 - [Bcrypt](https://github.com/kelektiv/node.bcrypt.js#readme) a library to help you hash passwords
-- [jsonwebtoken](https://jwt.io/introduction) JSON Web Token (JWT) implementation library
 - [React-hot-toast](https://react-hot-toast.com/docs) for notifications in client
 
 ## Create the development server
@@ -72,8 +73,18 @@ npx prisma db push
 npm run dev
 ```
 
-## Testng
+### 6 Run in production mode
 
+```
+npm run build
+npm run start
+```
+
+## Testng 
+- Acccess http://localhost:3000/
+
+### Home Page
+![Home](./README.screen/01.%20Home.jpg)
 
 
 ## Learn More
