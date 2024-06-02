@@ -84,12 +84,12 @@ npm run start
 - Acccess http://localhost:3000/
 
 ### Home Page
-![Home](./README.screen/page-home.jpg)
+![Home](./README.screen/page-home.jpg  width="400")
 
 ### Create user
-![Create User](./screen/page-create.jpg)
-![User Created](./screen/result-created.jpg width="100")
-![Create Fail](./screen/result-fail.jpg width="200")
+![Create User](./README.screen/page-create.jpg)
+![User Created](./README.screenn/result-created.jpg width="100")
+![Create Fail](./README.screen/result-fail.jpg width="200")
 
 ## Learn More
 
