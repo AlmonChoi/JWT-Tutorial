@@ -21,5 +21,7 @@ This repo has the following sample implementation using approach
 - Frontend NEXT.js using React (to be implemented)
 - MongoDB (recplica set) for store user accounts. Password-hashing with Bcrypt
 
-## [Using Next.js + Auth.js](./Next.js-Auth.js)
-
+## [Using Next.js + Auth.js](./Next.js-Auth)
+- Backend NEXT.js implemented server side authentication using `Auth.js` `5.0.0-beta.4` and issue session token
+- Frontend NEXT.js side + client pages
+- MongoDB (recplica set) for store user accounts
