@@ -91,21 +91,22 @@ Menu bar before sign in
 
 ### Create User Page
 <img src="./README.screen/page-create.jpg" width="800">
-Account creation result 
-<img src="./README.screen/result-created.jpg" width="300">
+Account created and redirect to Sign in Page
+<img src="./README.screen/result-created.jpg" width="400">
 Account stored in MongoDB
 <img src="./README.screen/mongo-express.jpg" width="800">
-Account creation failed, for example duplicated user, password too long/short, and etc!
-<img src="./README.screen/result-fail.jpg" width="300">
-
+Account creation failed, for example duplicated user, data validation fail and etc!
+<img src="./README.screen/result-fail.jpg" width="400">
+Creation validation fail, for example password too long/short, and etc!
+<img src="./README.screen/Validation-submit.jpg" width="400">
 
 ### Sign in User Page
 - After sign in, if no callback url, it will redirected to Home Page
 <img src="./README.screen/page-signin.jpg" width="800">
 Client side input validation
-<img src="./README.screen/Validation-input.jpg" width="600">
+<img src="./README.screen/Validation-input.jpg" width="500">
 Account sign in failed, for example user not found, password not match, too long/short and etc! 
-<img src="./README.screen/result-sigin-fail.jpg" width="300">
+<img src="./README.screen/result-sigin-fail.jpg" width="400">
 Cookie after sigin in
 <img src="./README.screen/cookie-token.jpg" width="800">
 Menu bar after sign in
