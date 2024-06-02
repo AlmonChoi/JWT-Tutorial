@@ -85,20 +85,53 @@ npm run start
 
 ### Home Page
 <img src="./README.screen/page-home.jpg" width="700">
+Cookie before sign in
+<img src="./README.screen/cookie-main.jpg" width="600">
+Menu bar before sign in
+<img src="./README.screen/navbar-b4-signin.jpg" width="700">
 
-### Create user
+### Create User Page
 <img src="./README.screen/page-create.jpg" width="700">
-<img src="./README.screen/result-created.jpg" width="400">
-<img src="./README.screen/result-fail.jpg" width="400">
+Account creation result 
+<img src="./README.screen/result-created.jpg" width="300">
+Account stored in MongoDB
+<img src="./README.screen/mongo-express.jpg" width="700">
+Account creation failed, for example duplicated user, password too long/short, and etc!
+<img src="./README.screen/result-fail.jpg" width="300">
+
+
+### Sign in User Page
+- After sign in, if no callback url, it will redirected to Home Page
+<img src="./README.screen/page-signin.jpg" width="700">
+Client side input validation
+<img src="./README.screen/Validation-input.jpg" width="700">
+Account sign in failed, for example user not found, password not match, too long/short and etc! 
+<img src="./README.screen/result-sigin-fail.jpg" width="300">
+Cookie after sigin in
+<img src="./README.screen/cookie-token.jpg" width="600">
+Menu bar after sign in
+<img src="./README.screen/navbar-after-signin.jpg" width="700">
+
+### Protected and Secure Page
+<img src="./README.screen/page-secured.jpg" width="700">
+<img src="./README.screen/page-protected.jpg" width="700">
+
+> **Note**
+> Without sign in, these page will redirect to `Sign In'. It will redirected back after sucessful sign in
+Callback URL added
+<img src="./README.screen/url-callback.jpg" width="500">
+
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about Next.js and Auth.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [`Auth.js`](https://authjs.dev/getting-started/installation?framework=next.js) - Getting Started for Next.JS
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/
+
 
 ## Deploy on Vercel
 
