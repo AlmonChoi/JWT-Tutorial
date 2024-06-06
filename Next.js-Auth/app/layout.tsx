@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Navbar from "components/navbar";
 import { SessionProvider } from "next-auth/react";
 import { Toaster } from "react-hot-toast";
+import CookieConsentBanner from "components/CookieConsentBanner";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
@@ -22,6 +23,7 @@ export default async function RootLayout({
       <SessionProvider>
         <body className={inter.className}>
           <Toaster position="bottom-center" />
+          <CookieConsentBanner />
           <Navbar />
           {children}
         </body>
