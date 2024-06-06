@@ -1,7 +1,9 @@
 import { auth } from "lib/auth";
+import { logger } from 'lib/winston'
 
 export default async function SecuredPage() {
   let session = await auth();
+  logger.info("Secured page accessed by " + session?.user?.email);
 
   return (
     <div className="flex h-[calc(100vh-40px)] bg-gray-400">

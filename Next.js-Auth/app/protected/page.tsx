@@ -1,7 +1,9 @@
 import { auth } from "lib/auth";
+import { logger } from 'lib/winston'
 
 export default async function ProtectedPage() {
   let session = await auth();
+  logger.info("Protected page accessed by " + session?.user?.email);
 
   return (
     <div className="flex h-[calc(100vh-40px)] bg-slate-500">

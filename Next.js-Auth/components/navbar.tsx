@@ -4,12 +4,14 @@ import Link from "next/link";
 import logo from "@/public/next.svg";
 import { auth, signOut } from "lib/auth";
 
+
 const Header = async () => {
   const session = await auth();
   let isLoggedIn = false;
   if (session?.user?.email) {
     isLoggedIn = true;
   }
+
 
   return (
     <>
